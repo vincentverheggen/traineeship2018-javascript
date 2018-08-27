@@ -1,0 +1,37 @@
+{
+  "name": "traineeship2018-exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0-rc.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-rc.3",
+    "@babel/core": "^7.0.0-rc.3",
+    "@babel/preset-env": "^7.0.0-rc.3",
+    "babel-loader": "^8.0.0-beta.6",
+    "babel-polyfill": "^6.26.0",
+    "jasmine": "^3.2.0",
+    "jasmine-core": "^3.2.1",
+    "karma": "^3.0.0",
+    "karma-jasmine": "^1.1.2",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-webpack": "^3.0.0",
+    "webpack": "^4.17.1"
+  },
+  "scripts": {
+    "test": "karma start --no-auto-watch",
+    "test:watch": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jocoone/traineeship2018-javascript.git"
+  },
+  "author": "Joey Comhaire",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jocoone/traineeship2018-javascript/issues"
+  },
+  "homepage": "https://github.com/jocoone/traineeship2018-javascript#readme"
+}
