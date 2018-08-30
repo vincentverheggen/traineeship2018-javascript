@@ -1,10 +1,9 @@
-export class Test {
-    constructor(x, y) {
-        this.x = x;
-        this.y = y;
+export default class Helloworld {
+    constructor(name) {
+        this.name = name;
     }
 
-    isXEven() {
-        return this.x % 2;
+    getMessage() {
+        return `Hello ${this.name}!`;
     }
 }
