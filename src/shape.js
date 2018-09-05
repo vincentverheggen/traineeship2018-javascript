@@ -25,4 +25,4 @@
  */
 // TODO 9 think of 3 other types of shapes and extend from the correct super class
 
-// TODO 10 think of new methods you can add to the shapes we created
+// TODO 10 think of new methods you can add to the shapes we created (at least 2)
