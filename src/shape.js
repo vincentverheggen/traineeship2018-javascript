@@ -5,7 +5,7 @@
 // TODO 3 create a new file (src/rectangle.js) and create a Rectangle class
 
 // TODO 4 make the Rectangle class and extend from Shape
-s
+
 // TODO 5 add following function to Shape:
 /*
     void move(x, y) change x and y position of the shape
