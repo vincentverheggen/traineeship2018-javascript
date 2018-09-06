@@ -1,0 +1,23 @@
+{
+  "compileOnSave": false,
+  "exclude": [
+    "node_modules",
+    "test",
+    "test.ts"
+  ],
+  "include": [
+    "./src/**/*"
+  ],
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "module": "commonjs",
+    "emitDecoratorMetadata": true,
+    "preserveConstEnums": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "target": "es5"
+  }
+}
+

@@ -12,7 +12,7 @@ module.exports = function(config) {
 
         // list of files / patterns to load in the browser
         files: [
-            {pattern: 'test.js', watched: false}
+            {pattern: 'test.ts', watched: false}
         ],
 
 
@@ -24,23 +24,27 @@ module.exports = function(config) {
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
-            'test.js': ['webpack']
+            'test.ts': ['webpack']
         },
         webpack: {
             mode: 'development',
             module: {
                 rules: [
                     {
-                        test: /\.js$/,
+                        test: /\.ts$/,
                         exclude:/node_modules/,
-                        loader: 'babel-loader',
-                        options: {
-                            presets: ['@babel/preset-env']
-                        }
+                        loader: 'ts-loader'
                     }
                 ]
             },
-            watch: true
+            watch: true,
+            resolve: {
+                // Add `.ts` and `.tsx` as a resolvable extension.
+                extensions: ['.ts', '.tsx', '.js'] // note if using webpack 1 you'd also need a '' in the array as well
+            },
+            node: {
+                fs: "empty"
+            }
         },
         webpackServer: {
             noInfo: true
